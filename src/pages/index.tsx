@@ -2,8 +2,8 @@
 export default function Home(props) {
   return (
     <div>
-      <h1>Index</h1>
-      <p>{JSON.stringify(props.episodes)}</p>
+    <h1>Index</h1>
+    <p>{JSON.stringify(props.episodes)}</p>
     </div>
   )
 }
@@ -17,6 +17,6 @@ export async function getStaticProps() {
     props: {
       episodes: data,
     },
-    revalidate: 60 * 60 * 8,
+    revalidate: 60 * 60 * 8
   }
 }
